@@ -1,3 +1,5 @@
+// Implemente um programa que leia da entrada uma matriz m ×n de inteiros e exiba na sa´ıda a soma de todos os seus elementos.
+
 import java.util.Scanner;
 
 public class Main {
@@ -24,9 +26,7 @@ public class Main {
         System.out.println("Soma:");
         for (int i = 0; i < linha; i++ ) { 
             for (int j = 0; j < coluna; j++) {
-                if (i == j) {
                     soma += matriz[i][j];
-                }
             }
             
         }
