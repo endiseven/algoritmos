@@ -1,3 +1,5 @@
+// Implemente um programa que leia da entrada uma matriz quadrada n × n de inteiros e exiba na saıda a soma dos elementos da diagonal principal.
+
 import java.util.Scanner;
 
 public class Main {
