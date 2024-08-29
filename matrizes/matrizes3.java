@@ -1,12 +1,19 @@
 // Implemente um programa que solicite ao usuario uma matriz de inteiros A3x4 e exiba a sua respectiva matriz transposta
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        int[][] matriz = {
-            {1, 2, 0, 5},
-            {4, 0, 3, 5},
-            {0, 8, 6, 4}
-        };
+        Scanner scanner = new Scanner(System.in);
+        int[][] matriz = new int[3][4];
+
+        System.out.println("Insira os elementos da matriz 3x4:");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 4; j++) {
+                System.out.print("Elemento [" + i + "][" + j + "]: ");
+                matriz[i][j] = scanner.nextInt();
+            }
+        }
 
         int[][] matrizTransposta = transporMatriz(matriz);
 
@@ -17,6 +24,8 @@ public class Main {
             }
             System.out.println();
         }
+
+        scanner.close();
     }
 
     public static int[][] transporMatriz(int[][] matriz) {
